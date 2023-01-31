@@ -7,7 +7,11 @@ router.get(`/`, (req, res) =>{
 });
 
 router.get(`/Nosotros`, (req, res) =>{
-    res.render(`nosotros`);
+    
+    const viajes = `Viaje a alemania`; 
+    res.render(`nosotros`, {
+        viajes
+    });
 });
 
 export default router;
