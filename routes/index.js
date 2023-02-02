@@ -3,10 +3,10 @@ import express, { response } from "express";
 const router = express.Router();
 
 router.get(`/`, (req, res) =>{
-    res.send(`Hola mundo`);
+    res.render(`Inicio`);
 });
 
-router.get(`/Nosotros`, (req, res) =>{
+router.get(`/nosotros`, (req, res) =>{
     
     const viajes = `Viaje a alemania`; 
     res.render(`nosotros`, {
